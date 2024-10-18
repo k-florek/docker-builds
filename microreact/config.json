@@ -1,0 +1,77 @@
+{
+    "auth": {
+      "email": {
+        "server": {
+          "host": "smtp",
+          "port": "25",
+          "auth": {
+            "user": "test@localreact.org",
+            "pass": "123456"
+          },
+          "secure": false
+        },
+        "from": "Microreact <noreply@localreact.org>",
+        "subject": "Login link for Microreact",
+        "text": "Hello!\nAccess your account here: http://localhost:80/auth/passwordless/callback?token=<%= tokenToSend %>&uid=",
+        "html": "views/emails/passwordless.html"
+      },
+  
+      "facebook": {
+        "clientId": "",
+        "clientSecret": ""
+      },
+    
+      "google": {
+        "clientId": "",
+        "clientSecret": ""
+      },
+  
+      "twitter": {
+        "clientId": "",
+        "clientSecret": ""
+      },
+  
+      "secret": "96028159f74f3ee09e1e5065cdff063faa8753dc34d845e8fa1fd4962f0fb1633fcc851ac075c96fb7e0b18b86e67eede27ff9a645335bc7abd34d911e6c2f01",
+  
+      "session": {
+        "maxAge": 2592000,
+        "updateAge": 86400
+      }
+    },
+  
+    "baseUrl": "http://localhost:3000/",
+  
+    "bodySizeLimit": "16mb",
+  
+    "experimentalFlags": {
+      "publicFolders": false
+    },
+  
+    "helpDesk": {
+      "email": "support@localreact.org",
+      "subject": "Feedback from localreact.org"
+    },
+  
+    "mapboxApiAccessToken": "pk.eyJ1IjoiY2dwc2RldiIsImEiOiJja2lhMndmN3AwbGpzMnhvNWZ0eWc3cWhoIn0.SDSaZCcDFP9s812jX1tzeA",
+  
+    "mongodb": {
+      "url": "mongodb://localhost:27017/microreact",
+      "database": "microreact"
+    },
+  
+    "repoPath": "./files",
+  
+    "showcaseFolders": [],
+  
+    "smtp": {   
+      "host": "smtp.localreact.org",
+      "port": "25",
+      "auth": {
+        "user": "smtp@localreact.org",
+        "pass": ""
+      },
+      "secure": false,
+      "from": "Microreact <noreply@localreact.org>"
+    }
+  
+  }
